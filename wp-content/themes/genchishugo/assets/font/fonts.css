@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Oswald:wght@200;300;400;500;600;700&family=Public+Sans:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@font-face {
+	font-family: 'Montserrat';
+	/* お好きな名前にしましょう */
+	src: url('Montserrat-SemiBold.ttf');
+	/* IE9以上用 */
+	src: url('Montserrat-SemiBold.ttf') format('embedded-opentype'),
+		/* IE8以前用 */
+		url('Montserrat-SemiBold.ttf') format('ttf'),
+		/* モダンブラウザ用 */
+		url('Montserrat-SemiBold.ttf') format('truetype');
+	/* iOS, Android用 */
+	font-weight: 600;
+	/* 念の為指定しておきます */
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	/* お好きな名前にしましょう */
+	src: url('Montserrat-Regular.ttf');
+	/* IE9以上用 */
+	src: url('Montserrat-Regular.ttf') format('embedded-opentype'),
+		/* IE8以前用 */
+		url('Montserrat-Regular.ttf') format('ttf'),
+		/* モダンブラウザ用 */
+		url('Montserrat-Regular.ttf') format('truetype');
+	/* iOS, Android用 */
+	font-weight: 400;
+	/* 念の為指定しておきます */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura';
+	/* お好きな名前にしましょう */
+	src: url('Futura Bold font.ttf');
+	/* IE9以上用 */
+	src: url('Futura Bold font.ttf') format('embedded-opentype'),
+		/* IE8以前用 */
+		url('Futura Bold font.ttf') format('ttf'),
+		/* モダンブラウザ用 */
+		url('Futura Bold font.ttf') format('truetype');
+	/* iOS, Android用 */
+	font-weight: 700;
+	/* 念の為指定しておきます */
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Futura';
+	/* お好きな名前にしましょう */
+	src: url('futura medium bt.ttf');
+	/* IE9以上用 */
+	src: url('futura medium bt.ttf') format('embedded-opentype'),
+		/* IE8以前用 */
+		url('futura medium bt.ttf') format('ttf'),
+		/* モダンブラウザ用 */
+		url('futura medium bt.ttf') format('truetype');
+	/* iOS, Android用 */
+	font-weight: 500;
+	/* 念の為指定しておきます */
+	font-style: normal;
+}
