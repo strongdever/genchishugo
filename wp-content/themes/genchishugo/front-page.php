@@ -124,7 +124,7 @@
             <div class="container">
                 <h2 class="head-title font-32-700">みんなの活動検索</h2>
                 <p class="description font-18-500">興味・関心のあるみんなの活動を探し、コンタクトをとってみよう</p>
-                <div class="searh-wrapper">
+                <div class="search-wrapper">
                     <ul class="pannel-list">
                         <li class="pannel-item">
                             <p class="label font-20-700">関わっている社会課題から探す</p>

@@ -43,6 +43,15 @@ main {
     /* 162.5% */
 }
 
+.font-16-500 {
+    color: $brown_color;
+    font-family: "Higure Gothic";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;  
+}
+
 .font-16-700 {
     color: $brown_color;
     font-family: "Higure Gothic";
@@ -116,13 +125,19 @@ main {
     position: relative;
     padding: 4.0rem 3.2rem;
     width: 100%;
+    height: -webkit-fill-available;
     aspect-ratio: 379 / 298;
     border: 1px solid #E3D9CA;
 
     .title {
         color: $green_color;
         margin-bottom: 1.6rem;
-        line-height: 2.4rem;
+        line-height: 2.4rem !important;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .content {
@@ -130,7 +145,6 @@ main {
         line-height: 2.2rem;
         display: -webkit-box;
         -webkit-line-clamp: 3;
-        /* Number of lines to display */
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -167,7 +181,13 @@ main {
 
 .categories {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 0.8rem;
+    row-gap: 0.8rem;
+    .btn {
+        padding: 0 1.6rem;
+        width: fit-content;
+    }
 }
 
 .news {
@@ -419,6 +439,44 @@ input[type=checkbox]:indeterminate:before {
             padding: 3.9rem 2.4rem;
             color: #1C1C1C;
             line-height: 3.0rem;
+        }
+    }
+}
+
+.search-wrapper {
+    .label {
+        margin-bottom: 2.4rem;
+    }
+
+    .check-list {
+        display: flex;
+        column-gap: 2.4rem;
+        align-items: center;
+    }
+
+    .pannel-item {
+        &:not(:last-child) {
+            margin-bottom: 4.8rem;
+        }
+    }
+}
+
+
+
+.search-wrapper {
+    .label {
+        margin-bottom: 2.4rem;
+    }
+
+    .check-list {
+        display: flex;
+        column-gap: 2.4rem;
+        align-items: center;
+    }
+
+    .pannel-item {
+        &:not(:last-child) {
+            margin-bottom: 4.8rem;
         }
     }
 }
