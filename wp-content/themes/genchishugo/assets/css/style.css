@@ -1807,6 +1807,19 @@ body.mobile-nav-active #mobile-nav {
           column-gap: 0.8rem;
   letter-spacing: 0;
   white-space: nowrap;
+  cursor: auto;
+}
+
+#single-activities .activities-content .about-activities .btn-wrapper .btn::before {
+  display: none;
+}
+
+#single-activities .activities-content .about-activities .btn-wrapper .btn::after {
+  display: none;
+}
+
+#single-activities .activities-content .about-activities .btn-wrapper .btn:hover {
+  color: #FFF;
 }
 
 #single-activities .activities-content .favorite-wrapper {

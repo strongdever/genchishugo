@@ -530,6 +530,16 @@
                     column-gap: 0.8rem;
                     letter-spacing: 0;
                     white-space: nowrap;
+                    cursor: auto;
+                    &::before {
+                        display: none;
+                    }
+                    &::after {
+                        display: none;
+                    }
+                    &:hover {
+                        color: #FFF;
+                    }
                 }
             }
         }
