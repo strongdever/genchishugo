@@ -143,19 +143,15 @@ function custom_term_radio_checklist( $args ) {
 add_filter( 'wp_terms_checklist_args', 'custom_term_radio_checklist' );
 
 function theme_custom_setup() {
+    add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' ); 
-    // add_image_size( "thumbnail", 150, 100, true );
-    // add_image_size( "case-thumbnail", 96, 96, true );
-    // add_image_size( "medium", 480, 320, true );
-    // set_post_thumbnail_size( 480, 320, true );
-    add_editor_style('assets/css/reset.css');
-    add_editor_style('assets/css/common.css');
-    add_editor_style('assets/css/style.css');
-    add_editor_style('editor-style.css');
-    add_theme_support( 'automatic-feed-links' );
+    // add_editor_style('assets/css/reset.css');
+    // add_editor_style('assets/css/common.css');
+    // add_editor_style('assets/css/style.css');
+    // add_editor_style(T_DIRE_URI.'editor-style.css');
 }
 
-add_action( 'after_setup_theme', 'theme_custom_setup' );
+add_action( 'admin_enqueue_scripts', 'theme_custom_setup' );
 
 //------remove autop------{
 add_filter('tiny_mce_before_init', 'disable_wpautop');
