@@ -260,4 +260,16 @@ function custom_pagination($total_pages, $current_page = 1, $total_counts = 0) {
 <?php
 }
 
+//add javascript to the admin dashboard
+function enqueue_custom_scripts() {
+    wp_enqueue_script('custom-editor-script', get_template_directory_uri() . '/assets/js/custom-editor-script.js', array('jquery'), '1.0', true);
+  }
+add_action('admin_enqueue_scripts', 'enqueue_custom_scripts');
+
+// add css style to the admin dashboard
+function custom_dashboard_css() {
+  wp_enqueue_style( 'custom-dashboard-css', T_DIRE_URI.'/assets/css/admin-dashboard.css' );
+}
+add_action( 'admin_enqueue_scripts', 'custom_dashboard_css' );
+
 ?>

@@ -59,6 +59,26 @@
                         </div>
                         <?php endif; ?>
 
+                        <?php if( get_field('article-style') == '動画セミナー一覧を埋め込んだパターン' ) : ?>
+                        <div class="activity-detail by-video font-16-400">
+                            <div class="content-wrapper font-16-400">
+                                <?php the_content(); ?>
+                            </div>
+                            <h2>動画セミナー 一覧</h2>
+                            <br>
+                            <?php if( have_rows('video-list') ) : ?>
+                            <ul class="video-list">
+                                <?php while ( have_rows('video-list') ) : the_row(); ?>
+                                <li class="item">
+                                    <iframe src="<?php echo get_sub_field('video-url'); ?>"></iframe>
+                                    <h4 class="video-title font-16-700"><?php echo get_sub_field('video-title');?><h4>
+                                </li>
+                                <?php endwhile; ?>
+                            </ul>
+                            <?php endif; ?>
+                        </div>
+                        <?php endif; ?>
+
                         <div class="about-activities">
                             <p class="label font-18-700">この活動について</p>
                             <div class="btn-wrapper">

@@ -507,6 +507,46 @@
                 }
             }
         }
+        .by-video {
+            h2 {
+                position: relative;
+                color: $brown_color;
+                font-family: "Higure Gothic";
+                font-size: 2.0rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 2.4rem; /* 100% */
+                margin-top: 1.6rem;
+                margin-left: 1.6rem;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 3px;
+                    height: 100%;
+                    background: $green_color;
+                    border-radius: 10px;
+                    left: -1.6rem;
+                }
+            }
+            .content-wrapper {
+                margin-bottom: 0;
+            }
+            .video-list {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0px, 1fr));
+                grid-column-gap: 3.2rem;
+                grid-row-gap: 3.2rem;
+                margin-bottom: 5.6rem;
+                .item {
+                    iframe {
+                        width: 100%;
+                        aspect-ratio: 461 / 260;
+                        border-radius: 15px;
+                        margin-bottom: 1.6rem;
+                    }
+                }
+            }
+        }
         .content-wrapper {
             line-height: 2.4rem;
             margin-bottom: 5.6rem;
