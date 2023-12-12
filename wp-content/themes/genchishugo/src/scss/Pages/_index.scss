@@ -390,6 +390,7 @@
 
     .search-wrapper {
         margin-bottom: 6.4rem;
+
         .pannel-list {
             margin-bottom: 4.0rem;
         }
@@ -400,6 +401,7 @@
         grid-template-columns: repeat(2, minmax(0px, 1fr));
         grid-column-gap: 3.2rem;
         grid-row-gap: 3.2rem;
+
         .activity-item {
             aspect-ratio: 461 / 306;
         }
@@ -416,27 +418,33 @@
         line-height: 4.0rem;
         margin-bottom: 2.4rem;
     }
+
     .favorite-wrapper {
         display: flex;
         align-items: center;
         column-gap: 0.4rem;
         margin-bottom: 2.4rem;
+
         img {
             width: 3.2rem;
             height: 3.2rem;
         }
+
         .number {
             color: $brown_color;
             font-family: "Inter";
             font-size: 1.8rem;
             font-style: normal;
             font-weight: 500;
-            line-height: 18px; /* 100% */
+            line-height: 18px;
+            /* 100% */
         }
     }
+
     .company-province {
         margin-bottom: 2.4rem;
     }
+
     .category-socials {
         display: flex;
         column-gap: 3.2rem;
@@ -446,43 +454,51 @@
             flex-wrap: wrap;
             row-gap: 0.8rem;
         }
+
         .addtoany {
             .addtoany_shortcode {
                 display: flex;
                 align-items: center;
                 margin: 0;
+
                 &::before {
                     white-space: nowrap;
                     margin-right: 1.6rem;
                 }
+
                 .a2a_kit {
                     white-space: nowrap;
                 }
             }
         }
     }
+
     .activities-content {
-        .header-text {
-            line-height: 3.2rem;
-            margin-bottom: 3.2rem;
-        }
-        .profile-image { 
+        .profile-image {
             width: 100%;
             margin-bottom: 4.5rem;
         }
+
         .profile-pannel {
             background: #F5EDE2;
             padding: 3.2rem 4.0rem;
             margin-bottom: 5.2rem;
+
             .name {
                 margin-bottom: 2.4rem;
             }
+
             .profile-text {
                 line-height: 2.4rem;
             }
         }
 
         .by-image {
+            .header-text {
+                line-height: 3.2rem;
+                margin-bottom: 3.2rem;
+            }
+
             .content-wrapper {
                 h2 {
                     margin-top: 2.0rem;
@@ -491,10 +507,12 @@
                     font-size: 2.0rem;
                     font-style: normal;
                     font-weight: 700;
-                    line-height: 2.0rem; /* 100% */
+                    line-height: 2.0rem;
+                    /* 100% */
                     display: flex;
                     align-items: center;
                     column-gap: 1.6rem;
+
                     &::before {
                         content: '';
                         width: 7.0rem;
@@ -502,11 +520,13 @@
                         background: $brown_color;
                     }
                 }
+
                 img {
                     width: 100%;
                 }
             }
         }
+
         .by-video {
             h2 {
                 position: relative;
@@ -515,9 +535,11 @@
                 font-size: 2.0rem;
                 font-style: normal;
                 font-weight: 700;
-                line-height: 2.4rem; /* 100% */
+                line-height: 2.4rem;
+                /* 100% */
                 margin-top: 1.6rem;
                 margin-left: 1.6rem;
+
                 &::before {
                     position: absolute;
                     content: '';
@@ -528,15 +550,18 @@
                     left: -1.6rem;
                 }
             }
+
             .content-wrapper {
                 margin-bottom: 0;
             }
+
             .video-list {
                 display: grid;
                 grid-template-columns: repeat(2, minmax(0px, 1fr));
                 grid-column-gap: 3.2rem;
                 grid-row-gap: 3.2rem;
                 margin-bottom: 5.6rem;
+
                 .item {
                     iframe {
                         width: 100%;
@@ -547,23 +572,141 @@
                 }
             }
         }
+
+        .seminar {
+            .head-desc {
+                line-height: 2.6rem;
+                margin-bottom: 5.6rem;
+            }
+
+            h2 {
+                position: relative;
+                color: $brown_color;
+                font-family: "Higure Gothic";
+                font-size: 2.0rem;
+                font-style: normal;
+                font-weight: 700;
+                margin-top: 1.6rem;
+                margin-left: 1.6rem;
+                margin-bottom: 3.2rem;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 3px;
+                    height: 100%;
+                    background: $green_color;
+                    border-radius: 10px;
+                    left: -1.6rem;
+                }
+            }
+
+            .overview-table {
+                margin-bottom: 4.8rem;
+
+                .record {
+                    position: relative;
+                    display: flex;
+
+                    .table-title {
+                        width: 32%;
+                        padding: 2.4rem;
+                        background: #F0F0F0;
+                        border-top: 1px solid #FFF;
+                    }
+
+                    .content {
+                        width: 68%;
+                        padding: 1.8rem 2.4rem;
+                        border-top: 1px solid #F0F0F0;
+                        border-right: 1px solid #F0F0F0;
+                    }
+
+                    &:first-child {
+                        .table-title {
+                            border-top: 1px solid #F0F0F0;
+                        }
+                    }
+
+                    &:last-child {
+                        .content {
+                            border-bottom: 1px solid #F0F0F0;
+                            line-height: 2.8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .by-member {
+            .head-text {
+                line-height: 2.6rem;
+                margin-bottom: 4.8rem;
+            }
+
+            .security-label {
+                color: #000;
+                display: flex;
+                align-items: center;
+                margin-bottom: 2.4rem;
+                width: fit-content;
+                margin: 0 auto 2.4rem auto;
+
+                svg {
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    margin-right: 0.4rem;
+                }
+            }
+
+            .number-character {
+                width: fit-content;
+                display: block;
+                margin: 0 auto 1.6rem auto;
+                color: #000;
+            }
+
+            .btn-register {
+                margin: 0 auto 3.2rem auto;
+                width: 22.4rem;
+
+                &::after {
+                    border: 1px solid #CEBA6E;
+                    border-radius: 6px;
+                }
+            }
+
+            .login {
+                position: relative;
+                display: block;
+                width: fit-content;
+                margin: 0 auto 4.8rem auto;
+                color: #000;
+                text-decoration: underline;
+            }
+        }
+
         .content-wrapper {
             line-height: 2.4rem;
             margin-bottom: 5.6rem;
         }
+
         .about-activities {
             width: 100%;
             background: #F5EDE2;
             padding: 4.0rem 5.6rem;
             margin-bottom: 4.0rem;
+
             .label {
                 width: fit-content;
                 margin: 0 auto 2.4rem auto;
             }
+
             .btn-wrapper {
                 display: flex;
                 justify-content: center;
                 column-gap: 2.4rem;
+
                 .btn {
                     width: fit-content;
                     padding: 0 2.8rem;
@@ -571,35 +714,44 @@
                     letter-spacing: 0;
                     white-space: nowrap;
                     cursor: auto;
+
                     &::before {
                         display: none;
                     }
+
                     &::after {
                         display: none;
                     }
+
                     &:hover {
                         color: #FFF;
                     }
                 }
             }
         }
+
         .favorite-wrapper {
             margin-bottom: 3.2rem;
         }
+
         .btn-leftarrow {
             margin-bottom: 8.2rem;
         }
+
         .recommended-wrapper {
             margin-bottom: 12.7rem;
+
             .label {
                 width: fit-content;
                 margin: 0 auto 2.4rem 0;
             }
+
             .activities-list {
                 display: grid;
                 grid-template-columns: repeat(2, minmax(0px, 1fr));
                 grid-column-gap: 3.2rem;
                 grid-row-gap: 3.2rem;
+
                 .activity-item {
                     aspect-ratio: 461 / 306;
                 }

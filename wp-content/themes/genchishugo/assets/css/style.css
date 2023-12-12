@@ -412,7 +412,7 @@ figure img,
 }
 
 .btn-register.btn::after {
-  border: none;
+  border: unset;
 }
 
 .btn-login.btn {
@@ -1711,11 +1711,6 @@ body.mobile-nav-active #mobile-nav {
   white-space: nowrap;
 }
 
-#single-activities .activities-content .header-text {
-  line-height: 3.2rem;
-  margin-bottom: 3.2rem;
-}
-
 #single-activities .activities-content .profile-image {
   width: 100%;
   margin-bottom: 4.5rem;
@@ -1733,6 +1728,11 @@ body.mobile-nav-active #mobile-nav {
 
 #single-activities .activities-content .profile-pannel .profile-text {
   line-height: 2.4rem;
+}
+
+#single-activities .activities-content .by-image .header-text {
+  line-height: 3.2rem;
+  margin-bottom: 3.2rem;
 }
 
 #single-activities .activities-content .by-image .content-wrapper h2 {
@@ -1808,6 +1808,123 @@ body.mobile-nav-active #mobile-nav {
   aspect-ratio: 461 / 260;
   border-radius: 15px;
   margin-bottom: 1.6rem;
+}
+
+#single-activities .activities-content .seminar .head-desc {
+  line-height: 2.6rem;
+  margin-bottom: 5.6rem;
+}
+
+#single-activities .activities-content .seminar h2 {
+  position: relative;
+  color: #52432C;
+  font-family: "Higure Gothic";
+  font-size: 2.0rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 1.6rem;
+  margin-left: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+#single-activities .activities-content .seminar h2::before {
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 100%;
+  background: #104A00;
+  border-radius: 10px;
+  left: -1.6rem;
+}
+
+#single-activities .activities-content .seminar .overview-table {
+  margin-bottom: 4.8rem;
+}
+
+#single-activities .activities-content .seminar .overview-table .record {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#single-activities .activities-content .seminar .overview-table .record .table-title {
+  width: 32%;
+  padding: 2.4rem;
+  background: #F0F0F0;
+  border-top: 1px solid #FFF;
+}
+
+#single-activities .activities-content .seminar .overview-table .record .content {
+  width: 68%;
+  padding: 1.8rem 2.4rem;
+  border-top: 1px solid #F0F0F0;
+  border-right: 1px solid #F0F0F0;
+}
+
+#single-activities .activities-content .seminar .overview-table .record:first-child .table-title {
+  border-top: 1px solid #F0F0F0;
+}
+
+#single-activities .activities-content .seminar .overview-table .record:last-child .content {
+  border-bottom: 1px solid #F0F0F0;
+  line-height: 2.8rem;
+}
+
+#single-activities .activities-content .by-member .head-text {
+  line-height: 2.6rem;
+  margin-bottom: 4.8rem;
+}
+
+#single-activities .activities-content .by-member .security-label {
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.4rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 2.4rem auto;
+}
+
+#single-activities .activities-content .by-member .security-label svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 0.4rem;
+}
+
+#single-activities .activities-content .by-member .number-character {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin: 0 auto 1.6rem auto;
+  color: #000;
+}
+
+#single-activities .activities-content .by-member .btn-register {
+  margin: 0 auto 3.2rem auto;
+  width: 22.4rem;
+}
+
+#single-activities .activities-content .by-member .btn-register::after {
+  border: 1px solid #CEBA6E;
+  border-radius: 6px;
+}
+
+#single-activities .activities-content .by-member .login {
+  position: relative;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 4.8rem auto;
+  color: #000;
+  text-decoration: underline;
 }
 
 #single-activities .activities-content .content-wrapper {
@@ -1900,6 +2017,16 @@ body.mobile-nav-active #mobile-nav {
 
 main {
   margin-top: 13rem;
+}
+
+.font-14-400 {
+  color: #52432C;
+  font-family: "Higure Gothic";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 146.667% */
 }
 
 .font-15-400 {
